@@ -13,7 +13,7 @@ build:
 	@go build -o ./build/main ./src
 
 docker-dev:
-	@docker-compose -f docker-compose.yml -f docker-compose.dev.yml up --build
+	@docker-compose -f docker-compose.yml up --build -d
 
 docker-prod:
 	@docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build
